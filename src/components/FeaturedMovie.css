@@ -1,0 +1,108 @@
+.featured{
+    height: 100vh;
+}
+.featured--vertical{
+   width: inherit;
+   height: inherit;
+   background: linear-gradient(to top, #111 10%, transparent 90%);
+   
+}
+.featured--horizontal{
+   width: inherit;
+   height: inherit;
+   background: linear-gradient(to right, #111 30%, transparent 70%); 
+   display: flex; 
+   justify-content: center;
+   flex-direction: column; 
+   padding: 70px 0px 150px 30px;
+}
+.featured--name{
+    font-size: 60px;
+    font-weight: bold;
+}
+.featured--info{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.featured--points{  
+    color: #46d369;    
+}
+.featured--points, .featured--year, .featured--seasons{
+    display: inline-block;
+    margin-right: 15px;
+}
+.featured--description{
+    margin-top: 12px;
+    font-size: 20px;
+    color: #999;
+    max-width: 40%;
+}
+.btn{
+    width: 160px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border: none;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;    
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 15px;
+
+}
+.btn_white{
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: #222;    
+    transition: all ease .4s;
+    transform: scale(.9);
+}
+.btn_white:hover{
+    transform: scale(1);
+}
+.btn_black{
+    background-color: #333;
+    border: 1px solid #333;
+    color: #fff;  
+    transition: all ease .4s;
+    transform: scale(.9);
+}
+.btn_black:hover{
+    transform: scale(1);
+}
+.btn i{
+    
+    margin-right: 5px;
+}
+.featured--genres{
+    margin-top: 15px;
+    font-size: 18px;
+    color: #999;
+}
+
+@media (max-width: 768px){
+    .featured{height: 90vh;}
+    .featured--name{font-size: 40px;}
+    .featured--info{font-size: 16px;}
+    .featured--description{        
+        font-size: 16px;        
+        max-width: 100%;
+        margin-right: 40px;
+    }
+    .btn{
+        width: 140px;
+        height: 45px;        
+        line-height: 45px;        
+        font-size: 16px;
+    }
+    .featured--genres{        
+        font-size: 16px;       
+    } 
+    .featured--horizontal{       
+        background: linear-gradient(to right, #111 30%, transparent 70%); 
+        
+     }   
+   
+}
